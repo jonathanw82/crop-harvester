@@ -1,7 +1,5 @@
 # Harvester Project Documentation
 
-<div align="center"><img src="media/doser.jpg" width="100%"></div>
-
 **Project:** Harvester <br>
 **Engineer:** Jon Wheway <br>
 **Date:** 20/10/2025  
