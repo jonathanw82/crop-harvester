@@ -13,10 +13,10 @@ The machine, as originally acquired, was a custom-built unit that was not origin
 ## Original Safety Deficiencies Before the recent engineering overhaul, 
 
 The machine presented several critical safety risks:
-* **Inadequate Emergency Stops:** The original control panel featured only a single E-stop on the enclosure door.
-* **Dangerous Coast-Down Times:** Pressing the E-stop simply cuts power via a standard contactor, allowing the blade to coast for up to 15 seconds before coming to a complete stop.
+* **Inadequate Emergency Stops:** The original control panel featured only a single e-Stop on the enclosure door.
+* **Dangerous Coast-Down Times:** Pressing the e-Stop simply cuts power via a standard contactor, allowing the blade to coast for up to 15 seconds before coming to a complete stop.
 * **Partial System Shutdown:** The original safety circuit failed to isolate other powered components, such as the conveyor belt or vibration plate.
-* **Unpredictable system restart:** When the E-stop was removed, the machine would just restart without requiring a reset button.
+* **Unpredictable system restart:** When the e-Stop was removed, the machine would just restart without requiring a reset button.
 * **Physical Hazards:** Insufficient guarding allowed operators to reach into the machine while the blade was exposed.
   
 Due to these risks, I decommissioned the machine until comprehensive physical and electrical safety systems could be implemented to meet modern standards.
@@ -28,22 +28,22 @@ Due to these risks, I decommissioned the machine until comprehensive physical an
 ## 2. Upgraded Electrical & Safety Systems
 I designed a custom electrical control panel with an industry-standard E-stop relay and dedicated motor control hardware.
 
-The core design challenge was balancing immediate electrical safety with the requirement for controlled deceleration of the blade during an emergency. Originally, the blade would take around 12-15 seconds to come to a stop; this time has been dramatically reduced to 2-3 seconds through the implemented solution. This rapid deceleration is achieved by integrating dedicated motor control hardware that utilises DC injection braking. 
+The core design challenge was balancing immediate electrical safety with the requirement for controlled deceleration of the blade during an emergency. Originally, the blade would take around 12-15 seconds to come to a stop. The time now has been dramatically reduced to 2-3 seconds through the implemented solution. This rapid deceleration is achieved by integrating dedicated motor control hardware that utilises DC injection braking. 
 <br>
 
 This vector drives inject DC into the 3-phase motor's stator, creating a stationary magnetic field. As the rotor, which is still spinning due to inertia, cuts through this stationary field, a powerful braking torque is induced, causing the motor to decelerate rapidly and come to a complete stop. 
 <br>
 
-A time-delay relay, triggered by the E-stop circuit, then ensures the motor controller has adequate time to safely and controllably complete the braking sequence before the final electrical connection to the motor is severed. 
+A time-delay relay, triggered by the e-Stop circuit, then ensures the motor controller has adequate time to safely and controllably complete the braking sequence before the final electrical isolation occurs.
 <br>
 
 This entire process categorises the emergency stop as Category 1 according to the (EN/IEC 60204-1) standard, which defines a controlled stop where power remains available to machine actuators (the motor controller) to achieve the stop, before power is subsequently removed.
 
-Beacons and warning light where also fitted to users who are hard of hearing to ascertain the state of the machine at a glance. This was done by way of an overhead beacon and lights on the main control panel.
+For enhanced site safety and accessibility, overhead beacons and control panel lights were integrated. These allow users who are hard of hearing to immediately ascertain the machine’s status from a distance.
 
 * Green = Blade is stationary
 * Red = Blade is running
-* Amber = E-stop engaged
+* Amber = e-Stop engaged
 
   <br> 
 
@@ -64,7 +64,7 @@ Beacons and warning light where also fitted to users who are hard of hearing to 
 ### Motor Controllers
 <div align="center"><img src="media/Harvester motor controllers.jpg" width="100%"></div>
 
-### Safety E-stop relay schematic
+### Safety e-Stop relay schematic
 <div align="center"><img src="media/harvester safety relay.jpg" width="100%"></div>
 
 ### Main Panel pinout
@@ -112,7 +112,7 @@ Beacons and warning light where also fitted to users who are hard of hearing to 
 | P7 | 230 | P14 | 201 | P25 | 8 | P39 | 0.0 |
 
 ## Time Delay Relay
-The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+24V) and A2 (GND). Upon startup, a +24V holding signal is supplied to terminal B1 from the E-stop relay, keeping the time-delay relay contacts closed. When the E-stop circuit is triggered, the +24V signal to B1 is removed, initiating the countdown. After the preset delay of 3 seconds has elapsed, the relay contacts open, which de-energises a contactor connected between the blade's Optidrive and the motor, thereby severing all final power output from the pannel to the machine.
+The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+24V) and A2 (GND). Upon startup, a +24V holding signal is supplied to terminal B1 from the e-Stop relay, keeping the time-delay relay contacts closed. When the e-Stop circuit is triggered, the +24V signal to B1 is removed, initiating the countdown. After the preset delay of 3 seconds has elapsed, the relay contacts disengage, which de-energises a contactor connected between the blade's Optidrive and the motor, thereby isolating all final power output from the panel to the machine.
 
 ### Settings
 | State | Time|
@@ -129,10 +129,10 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
        * Turn on the farm wall isolator, then the harvester's main large red isolator.
 2.  **Status Check:** 
        * Green, Amber, and White lights should be illuminated
-       * (White) The machine now has power, (Green) the blade is stationary and (Amber) the E-stop is engaged. 
+       * (White) The machine now has power, (Green) the blade is stationary and (Amber) the e-Stop is engaged. 
 3.  **Reset:** 
-    * Check all cages and all E-stop buttons and disenguaged and the machine is safe.
-    * Turn the key to disenguage main e-stop button.
+    * Check all cages and all e-Stop buttons and disenguaged and the machine is safe.
+    * Turn the key to disenguage main e-Stop button.
     * Press the Reset button. The Amber light will turn off, and the green light should remain on, indicating the machine is ready to operate.
 
 ### Machine Operation
@@ -147,7 +147,7 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
 
 ### Restart after e-Stop
 1.  Amber light is illuminated! 
-2.  Check why the e-stop was engaged.
+2.  Check why the e-Stop was engaged.
 3.  If all is safe and the machine can be reset to service, remove the e-stop buttons.
 4.  Press the Reset Button, the amber light in go out.
 5.  Select the Forward direction on the conveyor belt control.
