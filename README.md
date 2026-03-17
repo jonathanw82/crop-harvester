@@ -167,6 +167,7 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
 3.  Flip the vibration switch to the OFF position.
 4.  Press and engage the main E-stop button on the control panel and remove the key.
 5.  Turn off the farm wall isolator.
+6.  Remove the key from the e-stop button and lock it in the secure keybox in welfar cabin.
 
 
 
