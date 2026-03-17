@@ -8,18 +8,18 @@
 ---
 
 ## 1. Project Brief
-The machine, as originally acquired, was a custom-built unit that was not originally designed for crop harvesting. An initial inspection I determined that the harvester was in an unsafe condition due to its non-standard construction.
+The machine, as originally acquired, was a custom-built unit that was not originally designed for crop harvesting. An initial inspection, I determined that the harvester was in an unsafe condition due to its non-standard construction.
 
 ## Original Safety Deficiencies Before the recent engineering overhaul, 
 
 The machine presented several critical safety risks:
 * **Inadequate Emergency Stops:** The original control panel featured only a single E-stop on the enclosure door.
-* **Dangerous Coast-Down Times:** Pressing the E-stop simply cut power via a standard contactor, allowing the blade to coast for up to 15 seconds before coming to a complete stop.
+* **Dangerous Coast-Down Times:** Pressing the E-stop simply cuts power via a standard contactor, allowing the blade to coast for up to 15 seconds before coming to a complete stop.
 * **Partial System Shutdown:** The original safety circuit failed to isolate other powered components, such as the conveyor belt or vibration plate.
-* **Unpridicatble system restart:** When the E-stop was removed the machine would just restart without requiring a rest button.
+* **Unpredictable system restart:** When the E-stop was removed, the machine would just restart without requiring a reset button.
 * **Physical Hazards:** Insufficient guarding allowed operators to reach into the machine while the blade was exposed.
   
-Due to these risks I condemned the machine until comprehensive physical and electrical safety systems could be implemented to meet modern standards.
+Due to these risks, I decommissioned the machine until comprehensive physical and electrical safety systems could be implemented to meet modern standards.
 
 <div align="center"><img src="media/originalPannel.jpg" width="45.5%"><img src="media/baremachine.jpg" width="45%"></div>
 
@@ -39,9 +39,9 @@ A time-delay relay, triggered by the E-stop circuit, then ensures the motor cont
 
 This entire process categorises the emergency stop as Category 1 according to the (EN/IEC 60204-1) standard, which defines a controlled stop where power remains available to machine actuators (the motor controller) to achieve the stop, before power is subsequently removed.
 
-Becons and warning light where also fitted to users who are hard of hearing can accertain the state of the machine at a glance, this we done by way of an overhead becon and lights on the main control pannel.
+Beacons and warning light where also fitted to users who are hard of hearing to ascertain the state of the machine at a glance. This was done by way of an overhead beacon and lights on the main control panel.
 
-* Green = Blade is stationalry
+* Green = Blade is stationary
 * Red = Blade is running
 * Amber = E-stop engaged
 
@@ -55,8 +55,8 @@ Becons and warning light where also fitted to users who are hard of hearing can 
 * **Safety Coverage:** Extensive coverage is achieved via five accessible E-stop buttons and three mechanical latches on protective cages.
 * **Braking System:** Blade stop time was reduced from 15 seconds to 2–3 seconds.
 * **Technology:** This uses DC injection braking to create a stationary magnetic field within the motor's stator.
-* **Standard:** Categorized as a Category 1 emergency stop (EN/IEC 60204-1).
-* **Visual Safety:** Illuminated becons mounted above the machine and on main control pannel.
+* **Standard:** Categorised as a Category 1 emergency stop (EN/IEC 60204-1).
+* **Visual Safety:** Illuminated beacons mounted above the machine and on the main control panel.
 
 ### 240v Schematic
 <div align="center"><img src="media/harvester 240v.jpg" width="100%"></div>
@@ -67,7 +67,7 @@ Becons and warning light where also fitted to users who are hard of hearing can 
 ### Safety E-stop relay schematic
 <div align="center"><img src="media/harvester safety relay.jpg" width="100%"></div>
 
-### Main Pannel pinout
+### Main Panel pinout
 <div align="center"><img src="media/main panel pinoutput.jpg" width="100%"></div>
 
 ### Power Ratings and Technical Settings
@@ -129,34 +129,34 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
        * Turn on the farm wall isolator, then the harvester's main large red isolator.
 2.  **Status Check:** 
        * Green, Amber, and White lights should be illuminated
-       * (White) The machine now has power, (Green) the blade is stationary and (Amber) the E-stop is enguaged. 
+       * (White) The machine now has power, (Green) the blade is stationary and (Amber) the E-stop is engaged. 
 3.  **Reset:** 
     * Check all cages and all E-stop buttons and disenguaged and the machine is safe.
     * Turn the key to disenguage main e-stop button.
-    * Press the Reset button. The Amber light will turn off and the green ligh should remain on, inducating the machine is ready to operate.
+    * Press the Reset button. The Amber light will turn off, and the green light should remain on, indicating the machine is ready to operate.
 
 ### Machine Operation
 * **Vibration:** 
-    * Flip the switch to ON (Blue light activates) the vibration motor will start.
+    * Flip the switch to ON (Blue light activates), the vibration motor will start.
 * **Conveyor:** 
     * Select the Forward direction on the conveyor belt control.
     * Adjust the speed to the desired level. It's recommended to start with a low speed to prevent the tray from moving through the machine too quickly.
 * **Blade:** 
-    * Press the Green button to start the balde. 
-    * The Red light indicates the blade is moveing.
+    * Press the Green button to start the blade. 
+    * The Red light indicates the blade is moving.
 
 ### Restart after e-Stop
 1.  Amber light is illuminated! 
-2.  Check why e-stop was enguaged.
+2.  Check why the e-stop was engaged.
 3.  If all is safe and the machine can be reset to service, remove the e-stop buttons.
 4.  Press the Reset Button, the amber light in go out.
 5.  Select the Forward direction on the conveyor belt control.
 6.  Adjust the speed to the desired level. It's recommended to start with a low speed to prevent the tray from moving through the machine too quickly.
-7.  Press the Green button to start the balde. 
-8.  The Red light indicates the blade is moveing.
+7.  Press the Green button to start the blade. 
+8.  The Red light indicates the blade is moving.
 9.  The vibration motor will start automatically.
 
-### Stopping machine while in service
+### Stopping the machine while in service
 1.  Press the red stop button on the blade control.
 2.  Press the red stop button on the conveyor control.
 3.  Flip the vibration switch to the OFF position.
@@ -165,12 +165,12 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
 1.  Press the red stop button on the blade control.
 2.  Press the red stop button on the conveyor control.
 3.  Flip the vibration switch to the OFF position.
-4.  Press and enguage the main E-stop button on the control pannel and remove the key.
-5.  Turn of the farm wall isolator.
+4.  Press and engage the main E-stop button on the control panel and remove the key.
+5.  Turn off the farm wall isolator.
 
 
 
-## Machine caging for pysical safety
+## Machine caging for physical safety
 
 <div ><img src="media/cag3.jpg" width="50%"><img src="media/cag4.jpg" width="50%"></div>
 <div align="center"><img src="media/cag1.jpg" width="100%"></div>
