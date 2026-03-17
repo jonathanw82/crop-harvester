@@ -1,4 +1,4 @@
-# Harvester Project Documentation
+# Crop Harvester Project
 
 **Project:** Harvester <br>
 **Engineer:** Jon Wheway <br>
