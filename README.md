@@ -7,10 +7,10 @@
 
 ---
 
-## 1. Project Brief
+## 1. Project brief
 The machine, as originally acquired, was a custom-built unit that was not originally designed for crop harvesting. An initial inspection, I determined that the harvester was in an unsafe condition due to its non-standard construction.
 
-## Original Safety Deficiencies Before the recent engineering overhaul, 
+## Original safety deficiencies before the recent engineering overhaul, 
 
 The machine presented several critical safety risks:
 * **Inadequate Emergency Stops:** The original control panel featured only a single e-Stop on the enclosure door.
@@ -25,7 +25,7 @@ Due to these risks, I decommissioned the machine until comprehensive physical an
 
 
 
-## 2. Upgraded Electrical & Safety Systems
+## 2. Upgraded electrical & safety systems
 I designed a custom electrical control panel with an industry-standard E-stop relay and dedicated motor control hardware.
 
 The core design challenge was balancing immediate electrical safety with the requirement for controlled deceleration of the blade during an emergency. Originally, the blade would take around 12-15 seconds to come to a stop. The time now has been dramatically reduced to 2-3 seconds through the implemented solution. This rapid deceleration is achieved by integrating dedicated motor control hardware that utilises DC injection braking. 
@@ -58,19 +58,19 @@ For enhanced site safety and accessibility, overhead beacons and control panel l
 * **Standard:** Categorised as a Category 1 emergency stop (EN/IEC 60204-1).
 * **Visual Safety:** Illuminated beacons mounted above the machine and on the main control panel.
 
-### 240v Schematic
+### 240v schematic
 <div align="center"><img src="media/harvester 240v.jpg" width="100%"></div>
 
-### Motor Controllers
+### Motor controllers
 <div align="center"><img src="media/Harvester motor controllers.jpg" width="100%"></div>
 
 ### Safety e-Stop relay schematic
 <div align="center"><img src="media/harvester safety relay.jpg" width="100%"></div>
 
-### Main Panel pinout
+### Main panel pinout
 <div align="center"><img src="media/main panel pinoutput.jpg" width="100%"></div>
 
-### Power Ratings and Technical Settings
+### Power ratings and technical settings
 | Part | Voltage (V) | Amps (A) |
 | :--- | :--- | :--- |
 | 24v PSU | 240 | 2.8  |
@@ -111,7 +111,7 @@ For enhanced site safety and accessibility, overhead beacons and control panel l
 | P6 | 0 | P13 | 0 | P24 | 1.5 |   P38   | 0 |
 | P7 | 230 | P14 | 201 | P25 | 8 | P39 | 0.0 |
 
-## Time Delay Relay
+## Time delay relay
 The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+24V) and A2 (GND). Upon startup, a +24V holding signal is supplied to terminal B1 from the e-Stop relay, keeping the time-delay relay contacts closed. When the e-Stop circuit is triggered, the +24V signal to B1 is removed, initiating the countdown. After the preset delay of 3 seconds has elapsed, the relay contacts disengage, which de-energises a contactor connected between the blade's Optidrive and the motor, thereby isolating all final power output from the panel to the machine.
 
 ### Settings
@@ -122,7 +122,7 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
 | t:   | 3-4s |
 
 
-## 3. Operation Guide
+## 3. Operation guide
 
 ### Start-Up
 1.  **Main Power:** 
@@ -135,7 +135,7 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
     * Turn the key to disenguage main e-Stop button.
     * Press the Reset button. The Amber light will turn off, and the green light should remain on, indicating the machine is ready to operate.
 
-### Machine Operation
+### Machine operation
 * **Vibration:** 
     * Flip the switch to ON (Blue light activates), the vibration motor will start.
 * **Conveyor:** 
@@ -161,7 +161,7 @@ The time-delay relay is continuously powered by the 24V PSU via terminals A1 (+2
 2.  Press the red stop button on the conveyor control.
 3.  Flip the vibration switch to the OFF position.
 
-### Shutdown After service
+### Shutdown after service
 1.  Press the red stop button on the blade control.
 2.  Press the red stop button on the conveyor control.
 3.  Flip the vibration switch to the OFF position.
