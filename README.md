@@ -31,7 +31,7 @@ I designed a custom electrical control panel with an industry-standard E-stop re
 The core design challenge was balancing immediate electrical safety with the requirement for controlled deceleration of the blade during an emergency. Originally, the blade would take around 12-15 seconds to come to a stop. The time now has been dramatically reduced to 2-3 seconds through the implemented solution. This rapid deceleration is achieved by integrating dedicated motor control hardware that utilises DC injection braking. 
 <br>
 
-This vector drives inject DC into the 3-phase motor's stator, creating a stationary magnetic field. As the rotor, which is still spinning due to inertia, cuts through this stationary field, a powerful braking torque is induced, causing the motor to decelerate rapidly and come to a complete stop. 
+The variable frequency drive injects DC into the 3-phase motor's stator, creating a stationary magnetic field. As the rotor, which is still spinning due to inertia, cuts through the stationary field, a powerful braking torque is induced, causing the motor to decelerate rapidly and come to a complete stop. 
 <br>
 
 A time-delay relay, triggered by the e-Stop circuit, then ensures the motor controller has adequate time to safely and controllably complete the braking sequence before the final electrical isolation occurs.
